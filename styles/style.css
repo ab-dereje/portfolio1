@@ -36,11 +36,11 @@ a{
     color: inherit;
     font-family: inherit;
 }
-header{
+/* header{
     height: 100vh;
     color: var(--color-white);
     overflow: hidden;
-}
+} */
 
 section{
     min-height: 100vh;
@@ -58,7 +58,7 @@ section{
 }
 
 .sec1{
-    display: none;
+    display: inline;
     transform: translateY(0) scale(1);
 }
 .sec2{
@@ -76,6 +76,19 @@ section{
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+}
+
+.active{
+    display: black;
+    animation: scaleAnim is ease-in-out;
+    @keyframes scaleAnim{
+        0{
+            transform: translateY(-100%) scaleY(0)
+        }
+        100%{
+            transform: translateY(0) scaleY(1)
+        }
+    }
 }
 
 .controlls{
@@ -110,7 +123,7 @@ controlls.control.i{
     pointer-events: none;
 }
 .active-btn{
-    background-color: var(--color-secondary);
+      background-color: var(--color-secondary);
     transition: all .4s ease-in-out;
 }
 controlls.i{

@@ -12,6 +12,35 @@ function pageTransition(){
             this.className += 'active-btn';
         })
     }
+    //section Active
+    allSection.addEventListener('click',(e) =>{
+        const id= e.target.dataset.id;
+        if (id){
+            //remove active btn
+            sectBtns.forEach((btn) =>{
+                btn.classList.remove('active')
+            })
+            e.target.classList.add('active')
+            //hide other section
+            sections.forEach((section)=>{
+                section.classList.remove('active')
+            })
+            const element = document.getElementById(id)
+            element.classList.add("active");
+        }
+    })
 }
 
 pageTransition();
+
+// Add event listener to each button
+// sectBtn.forEach(sectBtn =>{
+//     sectBtn.addEventListener('click',()=>{
+//         //Remove active class from current active button
+//         const currentBtn =document.querySelector('.active-btn');
+//         currentBtn.classList.remove('active-btn');
+
+//         // add active class to clicked button
+//         sectBtn.classList.add('active-btn');
+//     });
+// });
