@@ -1,91 +1,147 @@
-
 @media screen and (max-width: 600px) {
-    header{
+    header {
         padding: 0;
     }
-    header.right-header{
+    header.right-header {
         padding: 2rem !important;
     }
-    .name{
+    .name {
         font-size: 2.5rem !important;
     }
-
-
-    .theme-btn{
+    /* .theme-btn {
         width: 40px;
         height: 40px;
-    }
-    .header-content{
+    } */
+    .header-content {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
+        background-image: none;
+        padding-top: 2rem;
     }
-    .h-shape{
+    .h-shape {
         display: none;
     }
-
-
-    .right-header{
+    .right-header {
         padding: 0 !important;
         grid-row: 1;
         width: 90%;
         margin: 0 auto;
+        left: 3rem;
     }
-    
-    .header-content.left-header.image{
+    .image {
+        height: 18rem;
+        width: 18rem;
+    }
+    .image img {
+        height: 17rem;
+        width: 17rem;
+    }
+    /* .header-content.left-header.image {
         margin: 0 auto;
         width: 90%;
+    } */
+    .left-header {
+        justify-content: center;
+        padding-left: 2rem;
+        padding-top: 4rem;
     }
-
     /* About */
-    .about-container{
+    .about-container {
         grid-template-columns: 1fr;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
-    .right-about{
+    .right-about {
         grid-template-columns: 1fr;
-        padding-top: 2.5rem;
+        padding-left: 1rem;
+        padding-top: 0rem;
+        position: relative;
+        bottom: 8rem;
     }
-    .left-about{
-        padding-left: 0%;
+    .about-item {
+        position: relative;
+        top: 12rem;
+        width: 20rem;
+        height: 10rem;
+        left: 3rem;
     }
-    .progress-bars{
+    .large-text {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-grey-1)!important;
+    }
+    .left-about {
+        position: relative;
+        padding-left: 4rem;
+        padding-bottom: 0rem;
+    }
+    .left-about p {
+        line-height: 2rem;
+        padding: 0rem;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        color: var(--color-grey-1)!important;
+    }
+    .left-about h4 {
+        font-size: 1rem;
+        padding-left: 1rem;
+        text-transform: uppercase;
+        justify-content: center;
+    }
+    .about-status {
+        position: relative;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        padding-top: 0rem;
+    }
+    .progress-bars {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
     }
-
     /* portolio */
-    .portfolios{
+    .port-text {
+        position: relative;
+        left: 2rem;
+    }
+    .portfolios {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
+        padding-left: 8rem;
     }
-
     /* contact-container */
-    .contact-content-con{
+    .contact-content-con {
         flex-direction: column;
+        padding-top: 1rem;
     }
-    .right-contact{
-        margin-left: 0;
+    .right-contact {
+        margin-left: 7rem;
         margin-top: 2.5rem;
         margin-bottom: 6rem;
     }
-    .i-c-2{
+    .i-c-2 {
         flex-direction: column;
     }
-    .i-c-2-child{
+    .i-c-2-child {
         margin-left: 0;
         margin-top: 1.5rem;
     }
-
+    .left-contact {
+        padding: 0rem;
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+    .contact-icon {
+        position: fixed;
+        left: 0rem;
+    }
     /* title */
-    .main-title h2{
+    .main-title h2 {
         font-size: 2.5rem;
     }
-
-
-    .section{
+    .section {
         padding: 2rem 2.5rem !important;
     }
-
-    .controlls{
+    .controlls {
         top: auto;
         bottom: 0;
         flex-direction: row;
@@ -95,8 +151,7 @@
         width: 100%;
         background-color: #191d2b;
     }
-    .control{
+    .control {
         margin: 1rem 0.3rem;
     }
 }
-
